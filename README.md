@@ -4,7 +4,9 @@ This is the Umbraco 11.4 sample using an OpenIddict implementation to provide Ac
 # Installation
 You will need to run Umbraco's normal installation routine and set up a database with an administrative account.
 
-# Logging in
+# Doing Single Sign-On
+SSO will work outside of an Active Directory environment for testing purposes. OpenIddict-WindowsAuth will use your local machine account.
+
 * Run both Umbraco11SSO and OpenIddict-WindowsAuth. 
 * Access Umbraco using Microsoft Edge or Google Chrome at https://localhost:44307/umbraco/#/login/false
 * Click "Sign in with CompanyName."
