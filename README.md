@@ -12,3 +12,12 @@ Umbraco will need to set up a database.
 * Return to the login form using the link above and sign in using your administrator account.
 * Assign your SSO Umbraco account a valid group (such as administrators), and also enable the account.
 * Log out and then log in using your SSO account by clicking "Sign in with CompanyName."
+
+# Configuration
+Configuration is via the IdentityServer section in appsettings.json.
+
+* Authority: the URI to where you installed OpenIddict-WindowsAuth. If you downloaded and ran the project in Visual Studio without changing anything, the Uri will be https://localhost:44353. You can verify this is correct by accessing the the OpenId configuration document at https://localhost:44353/.well-known/openid-configuration
+* Name: the name of your organization.
+* ClientId: the name of your client. If you're using unmodified OpenIddict-WindowsAuth, then it doesn't care and this value can be anything.
+* ClientSecret: a shared secret for your OpenId client. Again, if you're using unmodified OpenIddict-WIndowsAuth, this can be anything.
+* AutoRedirectLoginToExternalProvider: If set to true, Umbraco will try to skip the login form and proceed with authenticating with the OpenId server.
