@@ -2,7 +2,7 @@
 This is the Umbraco 11.4 sample using an OpenIddict implementation to provide Active Directory authentication for back office users. You can find the github project for that component here: https://github.com/auroris/OpenIddict-WindowsAuth
 
 # Installation
-Umbraco will need to set up a database.
+You will need to run Umbraco's normal installation routine and set up a database with an administrative account.
 
 # Logging in
 * Run both Umbraco11SSO and OpenIddict-WindowsAuth. 
